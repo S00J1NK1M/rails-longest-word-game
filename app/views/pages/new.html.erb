@@ -1,0 +1,13 @@
+<h1>Welcome to Longest Word Game! 🎮</h1>
+<br>
+<div class="flex-container">
+  <% @letters.each do |letter| %>
+  <div class="flex-item color-blue"><%= letter.capitalize %></div>
+  <% end %>
+  </div>
+  <br>
+  <p>What is the longest word you can find?</p>
+  <form action="/contact" method="get">
+  <input type="text" name="word">
+  <input type="submit" value="Play">
+</form>
